@@ -1,0 +1,112 @@
+.container{
+    display: flex;
+    height:100vh;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    background-image:url('cal-back.jpg');
+}
+.back{
+    transform:scale(1.6);
+}
+button{
+    height:48px;
+    width:48px;
+    border:none;
+    border-radius: 7px;
+    font-size: 30px;
+    font-family:arial;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgb(47, 46, 46);
+}
+button:active{
+    background-color: #F99736;
+}
+p{
+    font-family:orbitron;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 45px;
+    overflow: hidden;
+    margin-left:2px;
+    margin-right:2px;
+    justify-self: end;
+}
+.back{
+    background-color:#515159;
+    width:280px;
+    height:430px;
+    border-radius: 40px;
+}
+.front{
+    width:280px;
+    height:415px;
+    background-color: #626368;
+    border-radius: 35px;
+    display: grid;
+    place-items: center;
+}
+.outer-display{
+    background-color: #C5C7D4;
+    width:230px;
+    height:70px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+.display{
+    background-color: #D2D4E1;
+    height:60px;
+    width:230px;
+    border-radius: 7px;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+}
+.switches{
+    width:230px;
+    height:240px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    width:230px;
+    margin-bottom:10px;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    width:230px;
+    margin-bottom:10px;
+}
+.row3{
+    display: flex;
+    justify-content: space-between;
+    width:230px;
+    margin-bottom:10px;
+}
+.row4{
+    display: flex;
+    justify-content: space-between;
+    width:230px;
+    margin-bottom:10px;
+}
+.clear{
+    margin-right: 182px;
+    height:30px;
+    width:48px;
+    font-size: 15px;
+    color:white;
+    background-color: rgb(238, 42, 42);
+}
+.equal{
+    background-color: #F99736;
+}
+.equal:active{
+    background-color: white;
+}

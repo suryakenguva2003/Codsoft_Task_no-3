@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="back">
+                <div class="front">
+                    <div class="outer-display">
+                        <div class="display">
+                            <p class="p"></p>
+                        </div>
+                    </div>
+                    <div class="switches">
+                        <div class="row1">
+                            <button onclick="
+                                update('1');"
+                                >1</button>
+                            <button onclick="
+                                update('2');"
+                                >2</button>
+                            <button onclick="
+                                update('3');
+                                ">3</button>
+                            <button onclick="
+                                update('+');">+</button>
+                        </div>
+                        <div class="row2">
+                            <button onclick="
+                                update('4');
+                                ">4</button>
+                            <button onclick="
+                                update('5');
+                                ">5</button>
+                            <button onclick="
+                                update('6');
+                                ">6</button>
+                            <button onclick="
+                                update('-');
+                                ">-</button>
+                        </div>
+                        <div class="row3">
+                            <button onclick="
+                                update('7');
+                                ">7</button>
+                            <button onclick="
+                                update('8');
+                                ">8</button>
+                            <button onclick="
+                                update('9');
+                                ">9</button>
+                            <button onclick="
+                                update('*');
+                                ">*</button>
+                        </div>
+                        <div class="row4">
+                            <button onclick="
+                                update('0');"
+                                >0</button>
+                            <button onclick="
+                                update('.');
+                                ">.</button>
+                            <button class="equal" onclick="
+                                c=eval(c);
+                                document.querySelector('.p').innerHTML=c;
+                                localStorage.setItem('total',c);
+                                ">
+                                =
+                                </button>
+                            <button onclick="
+                                update('/');"
+                                >/</button>
+                        </div>
+                            <button class="clear" onclick="
+                            c='';
+                            document.querySelector('.p').innerHTML='';
+                            localStorage.removeItem('total');
+                            ">clear</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="calculator.js"></script>
+    </body>
+</html>
